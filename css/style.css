@@ -412,6 +412,21 @@ section {
   }
 }
 
+.page-hero {
+  background:
+    radial-gradient(60% 70% at 80% 10%, #5ce1c91a, #0000 60%),
+    linear-gradient(#eaf6fe, #f4faff);
+  padding-top: 140px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .page-hero {
+    padding-top: 110px;
+  }
+}
+
 .hero h1 span.accent {
   background: var(--grad-water);
   color: #0000;
