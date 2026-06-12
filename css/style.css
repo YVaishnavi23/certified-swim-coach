@@ -401,6 +401,10 @@ section {
   display: grid;
 }
 
+.hero-grid > * {
+  min-width: 0;
+}
+
 @media (max-width: 900px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -442,11 +446,11 @@ section {
 .hero-trust {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  overflow-x: auto;
   flex-wrap: nowrap;
   gap: 8px;
   margin: 24px 0 28px;
   display: flex;
-  overflow-x: auto;
 }
 
 .hero-trust::-webkit-scrollbar {
@@ -484,6 +488,7 @@ section {
   font-size: 0.92rem;
   font-weight: 600;
   display: flex;
+  flex-wrap: wrap;
   box-shadow: 0 8px 24px #0a66c259;
 }
 
